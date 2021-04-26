@@ -1,0 +1,169 @@
+body {
+    background: repeating-linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    animation: tlo 20s ease infinite;
+    background-size: 800%;
+}
+.fszystko {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    animation-name: pokazsie;
+    animation-duration: 2s;
+}
+h1 {font-size: 40px;}
+h2 {font-size: 30px;}
+h1, h2 {
+    cursor: default;
+    text-align: center;
+}
+h2 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+li a {
+    font-size: 20px;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    user-select: none;
+    display: inline-block;
+}
+li {
+    text-align: center;
+    border-right: 1px solid black;
+    display: inline;
+    float: left;
+}
+.discord {
+    color: #7289da;
+}
+.github {
+    color: #333;
+}
+.twitter {
+    color: #1da1f2;
+}
+.telegram {
+    color: #0088cc;
+}
+.lastfm {
+    color: #d51007;
+}
+.spotify {
+    color: #1db954;
+}
+.discord:hover {
+    color: white;
+    background-color: #7289da;
+}
+.github:hover {
+    color: white;
+    background-color: #333;
+}
+.twitter:hover {
+    color: white;
+    background-color: #1da1f2;
+}
+.telegram:hover {
+    color: white;
+    background-color: #0088cc;
+}
+.lastfm:hover {
+    color: white;
+    background-color: #d51007;
+}
+.spotify:hover {
+    color: white;
+    background-color: #1db954;
+}
+img {
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.floppa {
+    transform: scale(0.75);
+}
+.selfie {
+    transform: scale(1.5, 0.75);
+    margin-right: 15%;
+    float: right;
+}
+.floppa2 {
+    height: 550px;
+    width: 220px;
+}
+@keyframes pokazsie {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes tlo { 
+    0% {background-position:0% 50%}
+    50% {background-position:100% 25%}
+    100% {background-position:0% 50%}
+}
+#footer {
+    color: white;
+    background-color: black;
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 20px;
+    opacity: 0.75;
+    cursor: default;
+    transition: 0.25s ease-in-out;
+}
+#smallfooter {
+    font-size: 10px;
+    transition: 0.25s ease-in-out;
+}
+#footer:hover {
+    font-size: 30px;
+}
+#footer:hover #smallfooter {
+    font-size: 15px;
+}
+div span {
+    opacity: 1;
+}
+@media screen and (max-width: 745px) {
+    li {
+        display: block;
+        width: 100%;
+    }
+    li a {
+        width: 100%;
+    }
+    img {
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important; /* z jakiegoś powodu bez important ostatni szop sie nie wyśrodkowywał*/
+        float: none !important;
+        width: 50%;
+    }
+    .floppa2 {
+        transform: scale(0.75);
+    }
+}
