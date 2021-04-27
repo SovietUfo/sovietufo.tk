@@ -12,8 +12,7 @@ body {
     right: 0px;
     position: absolute;
     font-family: 'Rubik', sans-serif;
-    animation-name: pokazsie;
-    animation-duration: 2s;
+    animation: pokazsie 2s;
 }
 h1 {font-size: 40px;}
 h2 {font-size: 30px;}
@@ -41,6 +40,10 @@ li a {
     text-decoration: none;
     user-select: none;
     display: inline-block;
+    transition: 0.25s ease-in;
+}
+li a:hover {
+    text-shadow: 5px 2px 4px black;
 }
 li {
     text-align: center;
