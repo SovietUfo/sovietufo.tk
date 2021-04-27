@@ -14,8 +14,12 @@ body {
     font-family: 'Rubik', sans-serif;
     animation: pokazsie 2s;
 }
-h1 {font-size: 40px;}
-h2 {font-size: 30px;}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
 h1, h2 {
     cursor: default;
     text-align: center;
@@ -119,9 +123,15 @@ img {
     }
 }
 @keyframes tlo { 
-    0% {background-position:0% 50%}
-    50% {background-position:100% 25%}
-    100% {background-position:0% 50%}
+    0% {
+        background-position:0% 50%
+    }
+    50% {
+        background-position:100% 25%
+    }
+    100% {
+        background-position:0% 50%
+    }
 }
 #footer {
     color: white;
@@ -144,9 +154,11 @@ img {
 }
 #footer:hover {
     font-size: 30px;
+    opacity: 0.85;
 }
 #footer:hover #smallfooter {
     font-size: 15px;
+    opacity: 0.85;
 }
 div span {
     opacity: 1;
