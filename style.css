@@ -1,6 +1,6 @@
 body {
     background: repeating-linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
-    animation: tlo 20s ease infinite;
+    animation: tlo 20s linear infinite;
     background-size: 800%;
 }
 .fszystko {
