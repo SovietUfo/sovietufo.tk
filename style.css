@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background: repeating-linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
     animation: tlo 20s linear infinite;
@@ -163,7 +166,7 @@ img {
 div span {
     opacity: 1;
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 875px) {
     li {
         display: block;
         width: 100%;
@@ -181,4 +184,15 @@ div span {
     .floppa2 {
         transform: scale(0.75);
     }
+}
+.tecza {
+    background: repeating-linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: tlo 6s linear infinite;
+}
+.tecza:hover {
+    text-shadow: none;
 }
