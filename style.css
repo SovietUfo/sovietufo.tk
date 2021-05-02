@@ -172,6 +172,10 @@ div span {
     li {
         display: block;
         width: 100%;
+        border-right: none;
+    }
+    li:first-child {
+        border-bottom: 1px solid black;
     }
     li a {
         width: 100%;
