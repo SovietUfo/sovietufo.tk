@@ -105,19 +105,20 @@ img {
     border-radius: 10px;
     position: relative;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    height: auto;
 }
 .floppa {
-    transform: scale(0.75);
-}
-.selfie {
-    transform: scale(1.5, 0.75);
-    margin-right: 15%;
-    float: right;
+    width: 30%;
+    margin-left: 1%;
 }
 .floppa2 {
-    height: 550px;
-    width: 220px;
+    margin-left: 5%;
+    width: 20%;
 }
+ .selfie {
+    margin-left: 5%;
+    width: 30%;
+} 
 @keyframes pokazsie {
     from {
         opacity: 0;
