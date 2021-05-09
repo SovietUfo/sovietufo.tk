@@ -5,32 +5,46 @@
         <title>swag</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="strona zrobiona po to bym szostke z infy dostal :tf:">
-        <link rel="stylesheet" href="style.css">
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="icon" href="images/icon.ico">
         <script src="https://kit.fontawesome.com/3e95b5582a.js" crossorigin="anonymous"></script> <!--ikony z font awesome-->
     </head>
     <body>
-        <div class="fszystko">
-        <ul>
-            <li><a class="tecza">my social media and other stuff</a></li>
-            <li><a href="https://discordapp.com/users/590956498495209474/" target="_blank" class="discord"> <i class="fab fa-discord"></i> Discord</a></li>
-            <li><a href="https://t.me/elSovieto" target="_blank" class="telegram"> <i class="fab fa-telegram-plane"></i> Telegram</a></li>
-            <li><a href="https://github.com/SovietUfo" target="_blank" class="github"> <i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="https://twitter.com/elSovieto" target="_blank" class="twitter"> <i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="https://www.last.fm/user/SovietUfo" target="_blank" class="lastfm"> <i class="fab fa-lastfm"></i> last.fm</a></li>
-            <li><a href="https://open.spotify.com/user/arcadeaddicted?si=1c8f37c5dc3a47ac" target="_blank" class="spotify"> <i class="fab fa-spotify"></i> Spotify</a></li>
-        </ul>
+        <div id="wrapper" class="container-fluid">
+        <div id="fadein">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <ul class="navbar-nav">
+                <span class="navbar-brand">My social media and other stuff</span>
+                <li class="nav-item"><a class="nav-link discord" href="https://discordapp.com/users/590956498495209474/"><i class="fab fa-discord"></i> Discord</a></li>
+                <li class="nav-item"><a class="nav-link telegram" href="https://t.me/elSovieto"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+                <li class="nav-item"><a class="nav-link github" href="https://github.com/SovietUfo"><i class="fab fa-github"></i> GitHub</a></li>
+                <li class="nav-item"><a class="nav-link twitter" href="https://twitter.com/elSovieto"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li class="nav-item"><a class="nav-link lastfm" href="https://www.last.fm/user/SovietUfo"><i class="fab fa-lastfm"></i> last.fm</a></li>
+                <li class="nav-item"><a class="nav-link spotify" href="https://open.spotify.com/user/arcadeaddicted?si=1c8f37c5dc3a47ac"><i class="fab fa-spotify"></i> Spotify</a></li>
+            </ul>
+        </nav>
+        <br><br><br> <!--jestem geniuszem-->
         <h1>Hi,</h1>
         <h2>I like <a href="https://www.google.com/search?q=big+floppa" target="_blank">caracals</a> and raccoons.</h2>
         <h6><s>and i hate javascript</s></h6>
-        <img src="images/floppvana.jpg" class="floppa">
-        <img src="images/stop.jpg" class="floppa2">
-        <img src="images/selfie.jpg" class="selfie">
+        <div class="row align-items-center">
+            <div class="col gx-3">
+                <img src="images/floppvana.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col gx-3">
+                <img src="images/melon.jpg" class="img-fluid rounded">
+            </div>
+            <div class="col gx-3">
+                <img src="images/selfie.jpg" class="img-fluid rounded">
+            </div>
         <div id="footer">
             <span>Flop Powered</span>
             <div id="smallfooter">
                 <span>2021</span>
             </div>
+        </div>
         </div>
         </div>
         

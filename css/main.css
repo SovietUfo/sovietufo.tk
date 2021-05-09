@@ -2,12 +2,7 @@
 * {
     box-sizing: border-box;
 }
-body {
-    background: repeating-linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
-    animation: tlo 20s linear infinite;
-    background-size: 800%;
-}
-.fszystko {
+#wrapper {
     width: 100%;
     height: 100%;
     top: 0px;
@@ -16,6 +11,11 @@ body {
     right: 0px;
     position: absolute;
     font-family: 'Rubik', sans-serif;
+    background: repeating-linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    animation: tlo 20s linear infinite;
+    background-size: 800%;
+}
+#fadein {
     animation: pokazsie 2s;
 }
 h1 {
@@ -27,98 +27,50 @@ h2 {
 h1, h2, h6 {
     cursor: default;
     text-align: center;
+    color: black;
 }
 h2 a {
     text-decoration: none;
     color: black;
     cursor: default;
 }
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    overflow: hidden;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+h2 a:hover {
+    color: black;
 }
-li a {
-    font-size: 20px;
-    color: white;
-    padding: 12px;
-    text-decoration: none;
-    user-select: none;
-    display: inline-block;
-    transition: 0.25s ease-in;
+.navbar-brand {
+    margin-left: 16px;
 }
 li a:hover {
     text-shadow: 5px 2px 4px black;
 }
-li {
-    text-align: center;
-    border-right: 1px solid black;
-    display: inline;
-    float: left;
+.navbar-brand {
+    cursor: default;
+}
+.nav-link:hover {
+    color: white !important;
 }
 .discord {
-    color: #7289da;
+    color: #7289da !important;
 }
 .github {
-    color: #333;
+    color: #333 !important;
 }
 .twitter {
-    color: #1da1f2;
+    color: #1da1f2 !important;
 }
 .telegram {
-    color: #0088cc;
+    color: #0088cc !important;
 }
 .lastfm {
-    color: #d51007;
+    color: #d51007 !important;
 }
 .spotify {
-    color: #1db954;
-}
-.discord:hover {
-    color: white;
-    background-color: #7289da;
-}
-.github:hover {
-    color: white;
-    background-color: #333;
-}
-.twitter:hover {
-    color: white;
-    background-color: #1da1f2;
-}
-.telegram:hover {
-    color: white;
-    background-color: #0088cc;
-}
-.lastfm:hover {
-    color: white;
-    background-color: #d51007;
-}
-.spotify:hover {
-    color: white;
-    background-color: #1db954;
+    color: #1db954 !important;
 }
 img {
-    border-radius: 10px;
     position: relative;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    height: auto;
 }
-.floppa {
-    width: 30%;
-    margin-left: 1%;
-}
-.floppa2 {
-    margin-left: 5%;
-    width: 20%;
-}
- .selfie {
-    margin-left: 5%;
-    width: 30%;
-} 
 @keyframes pokazsie {
     from {
         opacity: 0;
@@ -170,16 +122,9 @@ div span {
 }
 @media screen and (max-width: 750px) {
     li {
-        display: block;
+        display: block !important;
         width: 100%;
         border-right: none;
-    }
-    li:first-child {
-        border-bottom: 1px solid black;
-    }
-    li a {
-        width: 100%;
-        font-size: 18px !important;
     }
     img {
         display: block;
