@@ -14,6 +14,7 @@
     background: repeating-linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
     animation: tlo 20s linear infinite;
     background-size: 800%;
+    padding: 0;
 }
 #fadein {
     animation: pokazsie 2s;
@@ -26,7 +27,6 @@ h2 {
 }
 h1, h2, h6 {
     cursor: default;
-    text-align: center;
     color: black;
 }
 h2 a {
@@ -39,12 +39,13 @@ h2 a:hover {
 }
 .navbar-brand {
     margin-left: 16px;
+    cursor: default;
 }
 li a:hover {
     text-shadow: 5px 2px 4px black;
 }
-.navbar-brand {
-    cursor: default;
+.navbar {
+    margin-bottom: 20px;
 }
 .nav-link:hover {
     color: white !important;
@@ -66,6 +67,9 @@ li a:hover {
 }
 .spotify {
     color: #1db954 !important;
+}
+.row {
+    max-width: 100%;
 }
 img {
     position: relative;
@@ -99,7 +103,7 @@ img {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 20px;
     opacity: 0.75;
     cursor: default;
@@ -119,36 +123,6 @@ img {
 }
 div span {
     opacity: 1;
-}
-@media screen and (max-width: 750px) {
-    li {
-        display: block !important;
-        width: 100%;
-        border-right: none;
-    }
-    img {
-        display: block;
-        margin-left: auto !important;
-        margin-right: auto !important; /* z jakiegoś powodu bez important ostatni szop sie nie wyśrodkowywał*/
-        float: none !important;
-        width: 50%;
-    }
-    .floppa2 {
-        transform: scale(0.75);
-    }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-}
-@media screen and (max-width: 1400px) {
-    li a {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 1200px) {
-    li a {
-        font-size: 16px;
-    }
 }
 .tecza {
     background: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);
