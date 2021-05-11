@@ -47,6 +47,9 @@ li a:hover {
 .navbar {
     margin-bottom: 20px;
 }
+.navbar-toggler {
+    margin-right: 1%;
+}
 .nav-link:hover {
     color: white !important;
 }
