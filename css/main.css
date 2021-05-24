@@ -41,9 +41,6 @@ h2 a:hover {
     margin-left: 16px;
     cursor: default;
 }
-li a:hover {
-    text-shadow: 5px 2px 4px black;
-}
 .navbar {
     margin-bottom: 20px;
 }
@@ -52,6 +49,7 @@ li a:hover {
 }
 .nav-link:hover {
     color: white !important;
+    text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3), 0 0 0.45em currentColor;
 }
 .discord {
     color: #5865F2 !important;
@@ -126,17 +124,6 @@ img {
 }
 div span {
     opacity: 1;
-}
-.tecza {
-    background: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);
-    background-size: 800% 800%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: tlo 6s linear infinite;
-}
-.tecza:hover {
-    text-shadow: none;
 }
 ::-webkit-scrollbar {
     width: 12px;
