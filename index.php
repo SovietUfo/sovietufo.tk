@@ -1,6 +1,6 @@
 <?php
     $images = glob("./images/floppa/*");
-    $losowa_floppa = $images[array_rand($images)];
+    $losowa_floppa = $images[array_rand($images)]
 ?>
 
 <!DOCTYPE html>
@@ -43,13 +43,13 @@
         <h6 class="text-center"><s>and i hate javascript</s></h6>
         <div class="row align-items-center m-2">
             <div class="col">
-                <img src="<?php echo $images[array_rand($images)] ?>" class="img-fluid rounded">
+                <img src="<?php echo $losowa_floppa ?>" class="img-fluid rounded">
             </div>
             <div class="col">
-                <img src="<?php echo $images[array_rand($images)] ?>" class="img-fluid rounded">
+                <img src="<?php echo $losowa_floppa ?>" class="img-fluid rounded">
             </div>
             <div class="col">
-                <img src="<?php echo $images[array_rand($images)] ?>" class="img-fluid rounded">
+                <img src="<?php echo $losowa_floppa ?>" class="img-fluid rounded">
             </div>
         <div id="footer">
             <span>Flop Powered</span>
